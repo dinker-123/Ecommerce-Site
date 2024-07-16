@@ -86,6 +86,7 @@
   border: none;
   color: white;
   background-color: #050505;
+   text-decoration: none; 
 }
 
 .playbtn:hover {
