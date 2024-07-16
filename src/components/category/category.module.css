@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    max-width: 18em;
+    background-color: #dae0e0;
+    border-radius: 4px;
+    padding: 1em;
+    margin-top: 1rem;
+    float: right;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 60px;
+  }
+
+  .accent{
+    accent-color: black;
+
+  }
+  
+  h5 {
+    margin-bottom: 1em;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .price,
+  .containerCategory {
+    margin-bottom: 1em;
+  }
+  
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+
+  #price {
+    color: rgb(0, 0, 0);
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: black
+  }
+  
+  .category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+  
+  .category input {
+    margin-right: 0.5em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+      margin: 1em auto;
+      padding: 1em;
+      position: static;
+      justify-content: center;
+      align-items: center;
+      margin-right: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1239px) {
+    .container {
+      width: 80%;
+      margin: 1em auto;
+      padding: 1em;
+      position: static;
+    }
+  }
+  

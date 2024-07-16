@@ -1,0 +1,102 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 15px 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #e9ecef; 
+  border-radius: 10px; 
+  background-color: white;
+  box-shadow: 2px -1px 10px rgb(217, 210, 210);
+  margin-top: 10rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {
+  margin-top: 45px;
+}
+
+
+input[type=text], input[type=password], input[type=number] {
+  width: 70%;
+  padding: 15px;
+  border: 1px solid #e9ecef; 
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+
+button {
+  width: 70%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: #1103b1;
+  color: white;
+  font-size: 18px;
+}
+
+
+button:focus {
+  background-color: #1103b1; 
+}
+
+.p {
+  margin-top: 2%;
+}
+
+.btn{
+  background-color: black;
+  color: white;
+}
+
+.btn:hover, .btn:focus{
+  background-color: rgb(40, 39, 39);
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .register {
+    width: 100%;
+    max-width: 80%;
+    margin-top: 9rem;
+  }
+}
+
+@media (max-width: 1280px){
+
+  .register {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .register{
+    width: 100%;
+    max-width: 80%;
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .register{
+    width: 100%;
+    max-width: 80%;
+    margin-top: 9rem;
+  }
+}

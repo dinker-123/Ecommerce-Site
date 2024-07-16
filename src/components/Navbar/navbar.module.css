@@ -1,0 +1,159 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dae0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.5rem 1rem; 
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+  color: #323246;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 2rem;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #323246;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #ddd;
+  border-radius: 0.25rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.search input {
+  width: 150px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.search button,
+.button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #323246;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.shopping {
+  cursor: pointer;
+  width: 20px;
+  color: #323246;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 1.5rem;
+  color: #323246;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .logo img {
+    width: 25px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #dae0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .search {
+    margin-bottom: 0.5rem;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}

@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.register {
+  margin: auto;
+  margin-top: 10%;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  padding-top: 15px;
+  padding-left: 10px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px -1px 10px rgb(217, 210, 210);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type=email], input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #e9ecef;
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+.p {
+  margin-top: 45px;
+  background-color: black;
+}
+
+.btn{
+  background-color: black;
+  color: white;
+}
+
+.btn:hover, .btn:focus{
+  background-color: rgb(40, 39, 39);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .register {
+      margin-top: 15rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .register {
+      margin-top: 10rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .register {
+      margin-top: 9rem;
+  }
+}
